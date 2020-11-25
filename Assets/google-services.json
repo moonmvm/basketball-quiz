@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1095108396359",
+    "firebase_url": "https://basketball-quiz-c2336.firebaseio.com",
+    "project_id": "basketball-quiz-c2336",
+    "storage_bucket": "basketball-quiz-c2336.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095108396359:android:7dfd81fc64eedc25dd3862",
+        "android_client_info": {
+          "package_name": "com.mishutolabs.basquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095108396359-4dckkcbu7ljd03r0dpvfm1vrd7enpofn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIj77zA3HT2P6yZVK-LblXxbv8ulMVfaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095108396359-4dckkcbu7ljd03r0dpvfm1vrd7enpofn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
