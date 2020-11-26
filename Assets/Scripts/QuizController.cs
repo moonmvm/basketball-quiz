@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Firebase.Database;
+using GoogleMobileAds.Api;
 using Newtonsoft.Json;
 using UnityEngine.UI;
 using Random = System.Random;
@@ -15,6 +16,8 @@ public class QuizController : MonoBehaviour
     public Button[] answerButtons;
     public GameObject quizCanvas;
     public GameObject resultCanvas;
+
+    private AdMobController adMobController = new AdMobController();
 
     private List<Question> questions = new List<Question>();
     private List<Question> questionsCopy;
@@ -29,6 +32,8 @@ public class QuizController : MonoBehaviour
 
     void Start()
     {
+        MobileAds.Initialize(initStatus => { });
+        adMobController.RequestInterstitial();
         DatabaseReference reference = FirebaseDatabase.DefaultInstance.RootReference;
         FirebaseDatabase.DefaultInstance
             .GetReference("Questions")
@@ -72,6 +77,7 @@ public class QuizController : MonoBehaviour
         questionsCopy = new List<Question>(questions);
         questionsCount = questionsCopy.Count;
         currentQuestion = 1;
+        adMobController.ShowInterstitial();
         LoadQuestion();
     }
 
