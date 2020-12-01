@@ -74,6 +74,7 @@ public class QuizController : MonoBehaviour
 
     public void OnStartButtonPressed()
     {
+        correctAnswers = 0;
         questionsCopy = new List<Question>(questions);
         questionsCount = questionsCopy.Count;
         currentQuestion = 1;
