@@ -88,7 +88,6 @@ public class QuizController : MonoBehaviour
         }
         else
         {
-            Debug.Log("LASt element");
             quizCanvas.SetActive(false);
             resultCanvas.SetActive(true);
             string resultRate = rates[correctAnswers.ToString()];
